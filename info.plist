@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>de.gemeinsam-gestalten.orgmode-bookmarks</string>
+	<key>connections</key>
+	<dict>
+		<key>DAD6A8D0-BB3B-4A5D-B36D-4671FDDDDAAF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2AD51C23-33A0-467D-8066-2808D64C8145</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Kevin Löhmann</string>
+	<key>description</key>
+	<string>Open Bookmarks from org file</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Orgmode Bookmarks</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>2AD51C23-33A0-467D-8066-2808D64C8145</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>1</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>bookmark</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>PATH=/usr/local/bin:/opt/homebrew/bin:$PATH
+
+python3 list_bookmarks.py</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search bookmarks from org file and open in default browser</string>
+				<key>title</key>
+				<string>Open Bookmark</string>
+				<key>type</key>
+				<integer>11</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DAD6A8D0-BB3B-4A5D-B36D-4671FDDDDAAF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow allow you to manage your bookmarks independent of your browser in an org file.
+
+Store your bookmarks as links in an org file and use as many heading levels as you like.
+
+Links will be opened in your default browser.
+
+Bookmark image by Lorc (https://lorcblog.blogspot.com/) from: https://game-icons.net/1x1/lorc/bookmarklet.html</string>
+	<key>uidata</key>
+	<dict>
+		<key>2AD51C23-33A0-467D-8066-2808D64C8145</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>135</real>
+		</dict>
+		<key>DAD6A8D0-BB3B-4A5D-B36D-4671FDDDDAAF</key>
+		<dict>
+			<key>xpos</key>
+			<real>95</real>
+			<key>ypos</key>
+			<real>135</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>filtermode</key>
+				<integer>0</integer>
+				<key>placeholder</key>
+				<string>Select file containing your bookmarks</string>
+				<key>required</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Bookmark file</string>
+			<key>type</key>
+			<string>filepicker</string>
+			<key>variable</key>
+			<string>bookmarksfile</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
